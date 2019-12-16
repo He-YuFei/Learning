@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Learning</string>
+    <string name="title_button_click_listener">按钮点击事件的实现</string>
+    <string name="btn_anonymous_class">匿名内部类</string>
+    <string name="btn_lambda">Lambda表达式</string>
+    <string name="btn_impl_on_click_listener">通过接口实现</string>
+</resources>
