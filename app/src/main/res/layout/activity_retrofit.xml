@@ -4,25 +4,24 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activity.MainActivity">
+    tools:context=".activity.RetrofitActivity">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
         <Button
-            android:text="@string/btn_anonymous_class"
             android:id="@+id/btn_anonymous_class"
+            android:text="@string/btn_anonymous_class"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
         <Button
-            android:text="@string/btn_lambda"
-            android:id="@+id/btn_lambda"
+            android:id="@+id/btn_sync"
+            android:text="@string/btn_anonymous_class"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
         <Button
-            android:text="@string/btn_impl_listener"
             android:id="@+id/btn_impl_listener"
+            android:text="@string/btn_impl_listener"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
     </LinearLayout>
-
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -18,6 +18,9 @@ import retrofit2.http.Query;
  */
 public interface Network {
 
+    @GET("sample")
+    Call<String> sample();
+
     /**
      * 返回服务器的原始数据对象
      * @return

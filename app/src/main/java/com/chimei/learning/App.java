@@ -22,7 +22,7 @@ public class App extends Application {
      * 如果需要访问非 https 的接口需要在 AndroidManifest.xml application 标签属性增加 allowClearUserData
      * 并设置为 true, 以允许使用明文传输.
      */
-    private Network network;
+    private static Network network;
 
     @Override
     public void onCreate() {
@@ -53,7 +53,7 @@ public class App extends Application {
                 .create(Network.class);
     }
 
-    public Network getNetwork() {
+    public static Network getNetwork() {
         return network;
     }
 }
