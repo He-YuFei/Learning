@@ -80,7 +80,7 @@ public class RetrofitActivity extends AppCompatActivity implements Callback<Stri
      * @return String
      */
     private String syncGetResult() {
-        Callable<String> callable = new Callable<String>() {
+        FutureTask<String> task = new FutureTask<>(new Callable<String>() {
             @Override
             public String call() throws Exception {
                 Response<String> response = App.getNetwork().sample().execute();
@@ -89,8 +89,7 @@ public class RetrofitActivity extends AppCompatActivity implements Callback<Stri
                 }
                 return null;
             }
-        };
-        FutureTask<String> task = new FutureTask<String>(callable);
+        });
         try {
             return task.get();
         } catch (ExecutionException | InterruptedException e) {

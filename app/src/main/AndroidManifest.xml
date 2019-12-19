@@ -4,7 +4,7 @@
 
     <application
         android:allowClearUserData="true"
-        android:name=".App"
+        android:name=".AppKotlin"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -12,6 +12,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".activity.RetrofitActivity"/>
+        <activity android:name=".activity.RetrofitKotlinActivity"/>
+        <activity android:name=".activity.MainKotlinActivity"/>
         <activity android:name=".activity.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
